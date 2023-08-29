@@ -6,4 +6,74 @@
 
 body {
   color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1500px;
+  margin: auto;
+  /* background-image: url(https://images.unsplash.com/photo-1578241561880-0a1d5db3cb8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-position: center; */
+}
+
+main,
+nav,
+footer,
+div {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.about-me {
+  background-color: black;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-text-box {
+  background-color: white;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 35px;
+}
+
+.project-text-box {
+  background-color: white;
+  max-width: 400px;
+}
+
+.portrait {
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.project-img {
+  max-width: 500px;
+  object-fit: cover;
+}
+
+h2 {
+  margin: 0 0 25px 0;
+}
+
+h3 {
+  text-align: center;
 }
