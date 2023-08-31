@@ -23,6 +23,7 @@ main,
 header,
 nav,
 footer,
+section,
 div {
   width: 100%;
 }
@@ -31,8 +32,9 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  /* padding: 20px 0 0 0; */
+h1,
+h2,
+h4 {
   white-space: nowrap;
 }
 
@@ -90,21 +92,52 @@ section {
   padding: 25px 0;
 }
 
+.section-header {
+  max-width: 1500px;
+  text-align: center;
+  margin: 0 0 25px 0;
+  position: relative;
+  z-index: -1;
+}
+
+.line {
+  border: 5px solid white;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: -1;
+
+  margin: 0 auto;
+
+  /* max-width: 1500px;
+  margin: 0 auto; */
+}
+
 #about-me {
 }
 
 .content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 15px;
 }
 
 .about-text-box {
   /* background-color: white; */
-  max-width: 350px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 35px;
+  gap: 15px;
+}
+
+.large-font {
+  font-size: 1.5em;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #projects {
@@ -127,12 +160,26 @@ section {
   object-fit: cover;
 }
 
+h2,
+img {
+  border-radius: 10px;
+}
+
 h2 {
-  margin: 0 0 25px 0;
+  /* margin: 0 0 25px 0; */
+  margin: 0 auto;
+  font-size: 3em;
+  background-color: #ffd60a;
+  padding: 20px;
+  width: min-content;
 }
 
 h3 {
   text-align: center;
+}
+
+h4 {
+  font-size: 3.5em;
 }
 
 #contact {
