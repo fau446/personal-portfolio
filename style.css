@@ -15,6 +15,10 @@ body {
   margin: auto;
 }
 
+i {
+  font-size: 1.5em;
+}
+
 main,
 header,
 nav,
@@ -34,12 +38,19 @@ h4 {
   white-space: nowrap;
 }
 
+.large-font {
+  font-size: 1.5em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .left-reveal {
   position: relative;
   transform: translateX(-500px);
   opacity: 0;
   transition: 1.5s all ease;
-  z-index: -1;
 }
 
 .right-reveal {
@@ -47,7 +58,6 @@ h4 {
   transform: translateX(500px);
   opacity: 0;
   transition: 1.5s all ease;
-  z-index: -1;
 }
 
 .left-reveal.active,
@@ -101,6 +111,7 @@ nav a.active::after {
   position: sticky;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
 }
 
 section {
@@ -109,7 +120,6 @@ section {
   align-items: center;
   padding: 25px 0;
   position: relative;
-  z-index: -2;
 }
 
 .section-header {
@@ -117,7 +127,6 @@ section {
   text-align: center;
   margin: 0 0 25px 0;
   position: relative;
-  z-index: -1;
 }
 
 .line {
@@ -125,15 +134,8 @@ section {
   position: absolute;
   top: 50%;
   width: 100%;
-  z-index: -1;
 
   margin: 0 auto;
-
-  /* max-width: 1500px;
-  margin: 0 auto; */
-}
-
-#about-me {
 }
 
 .content {
@@ -142,27 +144,45 @@ section {
   gap: 30px;
 }
 
-.about-text-box {
-  /* background-color: white; */
-  max-width: 500px;
+.text-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.about {
+  max-width: 500px;
   padding: 0 35px;
   gap: 15px;
 }
 
-.large-font {
-  font-size: 1.5em;
+.project-text {
+  max-width: 400px;
+  background-color: whitesmoke;
+  color: black;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.bold {
-  font-weight: bold;
+.project-text p {
+  font-size: 1.2em;
+}
+
+.content-footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 2px solid black;
+  padding: 10px 0 0 0;
+  gap: 5px;
 }
 
 #projects {
   /* background-color: #f76c6c; */
   background-color: #00b4d8;
+}
+
+.project {
+  margin: 0 0 100px 0;
 }
 
 .project-text-box {
@@ -180,12 +200,19 @@ section {
 }
 
 h2,
-img {
+img,
+.project-text {
   border-radius: 10px;
+}
+
+.svg {
+  width: 24px;
 }
 
 h2 {
   /* margin: 0 0 25px 0; */
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   font-size: 3em;
   background-color: #ffd60a;
@@ -195,6 +222,7 @@ h2 {
 
 h3 {
   text-align: center;
+  font-size: 2em;
 }
 
 h4 {
