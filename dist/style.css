@@ -15,10 +15,6 @@ body {
   margin: auto;
 }
 
-i {
-  font-size: 1.5em;
-}
-
 main,
 header,
 nav,
@@ -206,7 +202,7 @@ img,
 }
 
 .svg {
-  width: 24px;
+  width: 28px;
 }
 
 h2 {
@@ -229,8 +225,24 @@ h4 {
   font-size: 3.5em;
 }
 
-#contact {
-  /* background-color: #ffafcc; */
+footer {
   background-color: #48cae4;
-  color: black;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-p {
+  font-size: 1.3em;
+  margin: 15px 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  width: 45px;
 }
