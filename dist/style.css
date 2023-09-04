@@ -273,3 +273,11 @@ footer {
     max-width: 500px;
   }
 }
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
