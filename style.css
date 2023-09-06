@@ -5,8 +5,9 @@
 }
 
 body {
-  color: white;
-  background-color: #0096c7;
+  color: black;
+  /* background-color: #0096c7; */
+  background-color: #f6f6f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +72,10 @@ header {
   padding: 10px 100px;
 }
 
+h1 {
+  color: white;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -80,7 +85,7 @@ nav {
 }
 
 nav a {
-  color: orange;
+  color: #badfe7;
   position: relative;
   font-size: 1.2em;
 }
@@ -92,7 +97,7 @@ nav a::after {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: yellow;
+  background-color: white;
   transition: width 0.6s ease-in-out;
 }
 
@@ -128,7 +133,7 @@ section {
 }
 
 .line {
-  border: 5px solid white;
+  border: 5px solid #388087;
   position: absolute;
   top: 50%;
   margin: 0 auto;
@@ -198,7 +203,7 @@ i {
 }
 
 #projects {
-  background-color: #00b4d8;
+  background-color: #f6f6f2;
 }
 
 .project {
@@ -232,8 +237,8 @@ h2 {
 }
 
 h3 {
-  text-align: center;
   font-size: 2em;
+  color: #388087;
 }
 
 h4 {
@@ -244,6 +249,10 @@ footer {
   background-color: #48cae4;
   padding: 30px 0;
   text-align: center;
+}
+
+footer h3 {
+  color: black;
 }
 
 .footer-p {
